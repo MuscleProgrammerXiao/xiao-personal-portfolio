@@ -1,4 +1,4 @@
-## Portfolio Project
+<!-- ## Portfolio Project
 Welcome to my portfolio project! This repository features my personal portfolio website, inspired by [ByteGrad](https://www.youtube.com/watch?v=sUKptmUVIBM&t=21888s).
 
 <img width="804" alt="image" src="https://github.com/Codefreyy/joy-personal-portfolio/assets/104683968/92cae13b-3e5f-4874-afdb-c432b1a410f0">
@@ -12,4 +12,4 @@ Welcome to my portfolio project! This repository features my personal portfolio 
 - Multilingual Support: Added multiple language options using i18nNext.
 
 ## Contributions
-Contributions are welcome! Fork the repository and submit a pull request.
+Contributions are welcome! Fork the repository and submit a pull request. -->
