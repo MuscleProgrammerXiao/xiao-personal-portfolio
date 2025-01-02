@@ -62,7 +62,7 @@ export default function Intro() {
               stiffness: 125,
             }}
           >
-            👋
+            🍺
           </motion.span>
         </div>
       </div>
