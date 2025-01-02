@@ -8,7 +8,6 @@ import { useLocale, useTranslations } from "next-intl"
 
 export default function About() {
   const { ref } = useSectionInView("About")
-  const t = useTranslations("AboutSection")
   const sectionLan = useTranslations("SectionName")
   const activeLocale = useLocale()
 
@@ -23,30 +22,14 @@ export default function About() {
     >
       <SectionHeading>{sectionLan("about")}</SectionHeading>
       {activeLocale == "zh" ? (
-        // <p>{t("desc")}</p> //这样一段话没法分段
         <div className="flex flex-col gap-2">
-          <div>我是一个热爱学习、思考且富有韧性的人。</div>
-          <div>
-            从2019年到2023年，我在美丽的珞珈山武汉大学度过了四个春夏秋冬。在这段时间里，我开启了前端开发的大门，并在学校的大数据研究院和蔚来公司分别实习了半年。作为一名转码选手，我遇到了许多困难，也曾有过自我怀疑的时刻。但回顾过去，我发现是对自我提升的热爱以及与团队共同奋斗的激情支撑着我坚持下来。
-          </div>
-          <div>
-            本科毕业后，我来到了苏格兰的海边小镇，在圣安德鲁斯大学度过了一段难忘的时光。在这里，我养成了规律运动和健康饮食的好习惯，并结识了许多志同道合的朋友。我甚至在当地的意大利餐馆当厨师，并在一家酒店担任早餐服务员，丰富了我的人生体验。
-          </div>
-          <div>
-            适应异国他乡的生活并非易事，但这段经历让我学会了从逆境、冲突、失败甚至积极事件中快速恢复的能力。我坚信，坚韧、专注和自信是我最重要的品质之一。
-          </div>
-
-          <div>
-            目前，我在准备2025年秋招。同时在自己的 小红书 、
-            <a
-              className="underline"
-              href="https://blog-joy-peng.netlify.app/"
-              target="_blank"
-            >
-              个人博客
-            </a>
-            和 b站 记录技术和生活。
-          </div>
+          <p>我是一个热爱运动，喜欢阅读和分享，脑子里总有产生一些奇思妙想的人。</p>
+          <p>我的理想是做一款AI应用，为此我不得不出卖自己的手指，靠努力敲代码赚钱吃饭，并在吃饱了撑的时候积极筹备这件事。</p>
+          <p>从2020年毕业至今，我经历了四家公司，从重庆来到深圳。在这段时间里我从一个小白逐渐融入到的社会和工作中。
+          我喜欢阅读书籍并试图带入书中人物，揣摩他们的想法。并和不同年龄段的人交流我的心得。意外的是这让我交到了一些比我年长几十岁的朋友😂。</p>
+          <p>目前我在为银行工作。在项目组中担任前端开发并负责部分产品建设。日常会负责一些项目的搭建，需求排期工作分配和部分代码编写。也会和
+          业务交流沟通，砍掉一些不合理的需求...也会思维发散，和分行一线人员积极交流产品，将产品持续的迭代和优化。</p>
+          <p>开发，管理和产品的工作糅杂在一起，时常让我心力憔悴，但这也让我收获了很多。正是有了这些生活和工作的经验，让我大部分时间都充满干劲（或是郁闷-.-）。</p>
         </div>
       ) : (
         <>
@@ -115,7 +98,6 @@ export default function About() {
             </span>
             .{" "}
           </p>
-
           <p>
             In my spare time, I enjoy exploring new technologies and building
             interesting projects. I also run my social media accounts on

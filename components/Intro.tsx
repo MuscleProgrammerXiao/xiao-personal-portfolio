@@ -37,7 +37,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="/profile.png"
+              src="/profile.jpg"
               alt="developer-image"
               width="250"
               height="250"
@@ -74,31 +74,34 @@ export default function Intro() {
         <span className={`${sourceCodePro.className} text-sm tracking-wider `}>
           {t("hello_im")}
         </span>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
-        >
-          <h1 className="text-center text-4xl font-bold tracking-tight  sm:text-5xl">
-            {t("name")}
-          </h1>
-
           <div className="text-center">
+            <h1 className="text-center  mt-2 text-4xl font-bold tracking-wider  sm:text-5xl">
+              {t("name")}
+            </h1>
             <span
               className={`${sourceCodePro.className} text-sm tracking-wider`}
             >
               I&apos;m a{" "}
             </span>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="col-span-8 place-self-center text-center sm:text-left "
+            >
             <h2
               id="name"
-              className=" text-center  text-2xl  sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold"
+              className="text-center text-2xl sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold"
             >
               <TypeAnimation
                 sequence={[
-                  "Frontend Developer",
+                  activeLocale==='zh'?
+                  `一个前端开发复制粘贴操作员`:
+                  `A frontend copy-paste operator.`,
                   1000,
-                  "Full Stack Developer",
+                  activeLocale==='zh'?
+                  `和一个狂热理想主义者`:
+                  `A passionate idealist.`,
                   1000,
                 ]}
                 wrapper="span"
@@ -106,17 +109,9 @@ export default function Intro() {
                 repeat={Infinity}
               />
             </h2>
-          </div>
         </motion.div>
-        <p>{t("short_intro")}</p>
-        {activeLocale === "en" && (
-          <p>
-            My focus is{" "}
-            <span className="italic font-bold">React (Next.js)</span>.
-          </p>
-        )}
+          </div>
       </motion.h1>
-
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center  gap-3 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
@@ -125,18 +120,6 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        {/* <Link
-          href="#contact"
-          onClick={() => {
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
-          }}
-          className="group bg-gray-900 px-4 py-2 text-sm sm:text-lg text-white sm:px-7 sm:py-3 flex items-center gap-2  rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-        >
-          Contact me here
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link> */}
-
         <Link
           target="_blank"
           className="bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
@@ -151,28 +134,18 @@ export default function Intro() {
           <HiDownload />
         </Link>
         <a
-          className="bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/joy-yujiepeng/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
           className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Codefreyy"
+          href="https://github.com/MuscleProgrammerXiao"
           target="_blank"
         >
           <FaGithubSquare />
         </a>
         <a
           className=" bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://blog-joy-peng.netlify.app"
+          href="https://blogs-sable-zeta.vercel.app/"
           target="_blank"
         >
           {t("blog")}
-
-          {/* <FaGithubSquare /> */}
         </a>
       </motion.div>
     </section>

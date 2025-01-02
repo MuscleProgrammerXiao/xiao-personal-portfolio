@@ -3,7 +3,7 @@ import { Inter } from "next/font/google"
 // import ThemeContextProvider from "@/context/theme-context"
 import { ActionSectionContextProvider } from "@/context/action-section-context"
 import Header from "@/components/Header"
-// import Footer from "@/components/Footer"
+import Footer from "@/components/Footer"
 // import ThemeSwitch from "@/components/ThemeTwich"
 // import LanguageSwitch from "@/components/LanguageSwitch"
 import { NextIntlClientProvider, useMessages } from "next-intl"
@@ -32,7 +32,7 @@ export default function RootLayout({
             <ActionSectionContextProvider>
               <Header />
               {children}
-              {/* <Footer /> */}
+              <Footer />
               {/* <WidgetWrapper>
                 <ThemeSwitch />
                 <LanguageSwitch />

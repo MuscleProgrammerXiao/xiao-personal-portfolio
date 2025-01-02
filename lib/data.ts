@@ -1,10 +1,5 @@
-import React from "react";
-import { FaReact } from "react-icons/fa";
-import { FaVuejs } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import knowledgeSharingPlatformImage from '@/public/knowledge-sharing-platform.png';
 import breadditImage from "@/public/breaddit.png";
-import gameHubImage from "@/public/game-hub.png";
 import typingSpeedImage from "@/public/typing-speed.png";
 import visualizationImage from "@/public/d3.png";
 
@@ -25,14 +20,6 @@ export const links = [
         name: "Skills",
         hash: "#skills",
     },
-    {
-        name: "Experiences",
-        hash: "#experience",
-    },
-    // {
-    //     name: "Contact",
-    //     hash: "#contact",
-    // },
 ] as const;
 
 
@@ -43,82 +30,6 @@ export const headerLanguageMap = {
     Skills: '我的技能',
     Experiences: '我的经历',
 }
-
-export const experiencesData = [
-    {
-        title: "MSc in Computing and IT",
-        location: "University of St Andrews, UK",
-        description:
-            "Achieved a Master's degree in Computing and IT, acquiring in-depth knowledge in areas such as Human Computer Interaction, Computer Communication Systems, and Information Security. Developed strong capabilities in computational thinking, user-centred design, and data visualisation, preparing for effective application in technology-driven environments",
-        icon: React.createElement(LuGraduationCap),
-        date: "2023 Sep - 2024 May",
-    },
-    {
-        title: "Frontend Intern",
-        location: React.createElement("span", {},
-            React.createElement("a", {
-                href: "https://www.nio.com/",
-                style: { textDecoration: 'underline' },
-                target: "_blank"
-            }, "NIO Inc."),
-            " Wuhan, China"
-        ),
-        description:
-            "Developed NIO's third-generation station list and detail pages using Vue3, TypeScript, and Baidu Maps API. Implemented role-based access control for the Task Wizard page, enhancing system security. Collaborated effectively within a Jira-managed environment, utilizing Jenkins for deployment processes.",
-        icon: React.createElement(FaVuejs),
-        date: "2022 Aug - 2022 Dec",
-    },
-    {
-        title: "Frontend Assistant",
-        location: "Wuhan University | Wuhan, China",
-        description:
-            "Developed and maintained Finknow, a Financial Knowledge Graph Query and Analysis Platform using umi (React framework) and Ant Design Pro. Utilized graphin, a React toolkit for graph analysis based on G6, to develop an Equity Network Penetration Graph, enhancing data visualization capabilities.",
-        icon: React.createElement(FaReact),
-        date: "2022 May - 2022 July",
-    },
-    {
-        title: "BA in Digital Publishing",
-        location: "Wuhan University, China",
-        description:
-            "Graduated with a Bachelor of Arts in Digital Publishing, securing a GPA of 3.81/4.0. Gained foundational knowledge in digital media and publishing technologies.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019 Sep - 2023 Jun",
-    },
-
-]
-
-export const experiencesDataZn = [
-    {
-        "title": "计算机与信息技术硕士",
-        "location": "英国圣安德鲁斯大学",
-        "description": "在人机交互、计算机通信系统和信息安全等领域深入学习。培养了计算思维、以用户为中心的设计和数据可视化方面的强大能力，预计以一等学位毕业（GPA17/20）。",
-        icon: React.createElement(LuGraduationCap),
-        "date": "2023年9月 - 2024年12月"
-    },
-    {
-        "title": "前端实习生",
-        "location": "蔚来汽车（中国武汉）",
-        "description": `参与团队多个平台的迭代开发，独立完成内部告警平台的值班表页面开发。协助开发蔚来第三代场站列表与详情页，集成百度地图 API 实现定位与选点功能。优化任务魔棒页面，新增管理员角色，重构权限管理逻辑，用头像列表展示管理员，并整合飞书 API 实现消息发送。自定义 Element-UI 级联选择组件，解决全选德国 2000+ 城市时浏览器卡死问题，通过懒加载优化显著提升性能。遵循 Agile/Scrum 开发流程，进行两周一迭代，通过 Jira 跟进项目需求，设计技术方案，并与测试、后端、产品及 设计团队密切对接。`,
-        "icon": React.createElement(FaVuejs),
-        "date": "2022年8月 - 2022年12月"
-    },
-    {
-        "title": "前端开发",
-        "location": "武汉大学大数据研究院",
-        "description": "使用umi（React框架）和Ant Design Pro开发和维护Finknow，一个金融知识图谱查询和分析平台。利用基于G6的React图分析工具包graphin开发了股权网络穿透图，增强了数据可视化功能。",
-        "icon": React.createElement(FaReact),
-        "date": "2022年5月 - 2022年8月"
-    },
-    {
-        "title": "数字出版学士",
-        "location": "武汉大学",
-        "description": "以3.81/4.0的GPA毕业，获得数字出版学士学位，掌握了数字媒体和出版技术的基础知识。",
-        "icon": React.createElement(LuGraduationCap),
-        "date": "2019年9月 - 2023年6月"
-    }
-]
-
-
 export type ProjectTags = typeof projectsData[number]["tags"];
 
 export const projectsData = [
@@ -179,16 +90,10 @@ export const skillsData = [
     "Next",
     "Vue2",
     "Vue3",
-    "Node",
-    "Express",
     "Git",
     "Github",
     "Tailwind",
     "Chakra UI",
     "Boostrap",
-    "Prisma",
-    "MongoDB",
-    "Framer Motion",
-    "d3",
     "UI/UX"
 ] 
