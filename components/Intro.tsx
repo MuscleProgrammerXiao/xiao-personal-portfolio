@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from "react-icons/fa"
 import Link from "next/link"
@@ -96,13 +95,13 @@ export default function Intro() {
               <TypeAnimation
                 sequence={[
                   activeLocale==='zh'?
-                  `一个前端开发复制粘贴操作员`:
+                  `前端开发复制粘贴操作员`:
                   `A frontend copy-paste operator.`,
-                  1000,
+                  2000,
                   activeLocale==='zh'?
-                  `和一个狂热理想主义者`:
+                  `一个狂热理想主义者`:
                   `A passionate idealist.`,
-                  1000,
+                  2000,
                 ]}
                 wrapper="span"
                 speed={50}
@@ -124,9 +123,10 @@ export default function Intro() {
           target="_blank"
           className="bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href={
-            activeLocale == "en"
-              ? "/joy-fullstack-resume.pdf"
-              : "/前端开发-彭郁洁.pdf"
+            // activeLocale == "en"
+            //   ? "/joy-fullstack-resume.pdf"
+            //   : "/前端开发-彭郁洁.pdf"
+            "/前端开发-曹潇.pdf"
           }
           locale={false}
         >
